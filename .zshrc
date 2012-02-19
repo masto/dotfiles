@@ -36,6 +36,20 @@ umask 002
 setopt print_eight_bit
 watch=(all)
 
+# My environment variables
+export PAGER=less
+export CVS_RSH=ssh
+export CLICOLOR=YES
+export PERL5LIB="./extlib/lib/perl5/darwin-2level:./extlib/lib/perl5"
+export ANT_OPTS="-Xms256m -Xmx256m"
+export RSYNC_RSH=ssh
+export BLOCKSIZE=K
+export PERL_AUTOINSTALL=--defaultdeps
+export ADAMA_NO_BACKUPS_RISK_LOSING_EVERYTHING=1
+
+# Work around unintentional linking with Lion's libpq
+export PGHOST=/tmp
+
 alias API_LOCAL='export ADAMA_API_BASE=http://localhost:3000/api/v1/'
 alias API_DEV='export ADAMA_API_BASE=http://adama-test.mediamath.com/api/v1/'
 alias API_QA='export ADAMA_API_BASE=https://apollo-stage.mediamath.com/qa/api/v1/'
