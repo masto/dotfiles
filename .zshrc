@@ -26,7 +26,7 @@ zstyle ':omz:load' plugin 'archive' 'git'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':omz:prompt' theme 'sorin'
+zstyle ':omz:prompt' theme 'masto'
 
 # This will make you shout: OH MY ZSHELL!
 source "$HOME/.oh-my-zsh/init.zsh"
