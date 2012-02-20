@@ -1,0 +1,11 @@
+[color]
+	ui = auto
+[alias]
+	tree = log --graph --oneline --decorate --all
+	st = status -sb
+[branch]
+	autosetuprebase = always
+[core]
+	whitespace = trailing-space,space-before-tab,tab-in-indent
+[push]
+	default = current
