@@ -2,6 +2,7 @@
 # Sets Oh My Zsh options.
 #
 # Authors:
+#   Christopher Masto <chris@masto.com>
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
