@@ -39,6 +39,7 @@ watch=(all)
 
 # My environment variables
 export PAGER=less
+export ACK_PAGER=less
 export CVS_RSH=ssh
 export CLICOLOR=YES
 export PERL5LIB="./extlib/lib/perl5/darwin-2level:./extlib/lib/perl5"
