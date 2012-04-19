@@ -63,3 +63,5 @@ function llib () {
 }
 
 [[ -e /Users/Chris/perl5/perlbrew/etc/bashrc ]] && source /Users/Chris/perl5/perlbrew/etc/bashrc
+
+[[ -e /usr/local/Cellar/grc ]] && source "`brew --prefix grc`/etc/grc.bashrc"
