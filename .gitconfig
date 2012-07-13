@@ -2,6 +2,7 @@
 	ui = auto
 [alias]
 	tree = log --graph --oneline --decorate --all
+	graph = log --graph --oneline --decorate
 	st = status -sb
 [branch]
 	autosetuprebase = always
