@@ -38,9 +38,12 @@ zstyle ':omz:load' omodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt' \
+  'osx' \
   'archive' \
-  'git'
+  'git' \
+  'ruby' \
+  'syntax-highlighting' \
+  'prompt'
 
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
@@ -49,6 +52,14 @@ zstyle ':omz:module:prompt' theme 'masto'
 
 # This will make you shout: OH MY ZSHELL!
 source "$OMZ/init.zsh"
+
+zstyle ':omz:module:syntax-highlighting' color 'yes'
+zstyle ':omz:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'cursor' \
+  'root'
 
 # Customize to your needs...
 umask 002
