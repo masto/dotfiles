@@ -10,3 +10,5 @@
 	whitespace = trailing-space,space-before-tab,tab-in-indent
 [push]
 	default = current
+[credential]
+	helper = osxkeychain
