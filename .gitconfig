@@ -8,6 +8,7 @@
 	autosetuprebase = always
 [core]
 	whitespace = trailing-space,space-before-tab,tab-in-indent
+	excludesfile = /Users/chris/.gitignore_global
 [push]
 	default = current
 [credential]
