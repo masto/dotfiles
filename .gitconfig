@@ -1,0 +1,23 @@
+[credential]
+	helper = 
+	helper = /home/chris/.dotnet/tools/git-credential-manager
+	credentialStore = secretservice
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[user]
+	name = Christopher Masto
+	email = chris@masto.com
+[color]
+	ui = auto
+[alias]
+	tree = log --graph --oneline --decorate --all
+	graph = log --graph --oneline --decorate
+	st = status -sb
+[core]
+	whitespace = trailing-space,space-before-tab,tab-in-indent
+	excludesfile = /Users/chris/.gitignore_global
+[push]
+	default = simple
+
+[init]
+	defaultBranch = main
