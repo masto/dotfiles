@@ -1,17 +1,16 @@
-[credential]
-	helper = /home/chris/.dotnet/tools/git-credential-manager
-	credentialStore = secretservice
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = !/usr/bin/gh auth git-credential
+[credential "https://source.developers.google.com"]
+	helper = gcloud.sh
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[http]
+	cookiefile = /Users/chris/.gitcookies
 [user]
 	name = Christopher Masto
 	email = chris@masto.com
-[color]
-	ui = auto
 [alias]
 	tree = log --graph --oneline --decorate --all
 	graph = log --graph --oneline --decorate
@@ -21,6 +20,7 @@
 	excludesfile = /Users/chris/.gitignore_global
 [push]
 	default = simple
-
 [init]
 	defaultBranch = main
+[include]
+	path = .gitconfig.local
