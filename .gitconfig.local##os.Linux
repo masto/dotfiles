@@ -1,4 +1,3 @@
 [credential]
-	helper =
 	helper = /home/chris/.dotnet/tools/git-credential-manager
 	credentialStore = secretservice
