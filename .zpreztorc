@@ -35,10 +35,15 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'git' \
-  'completion' \
+  'ssh' \
+  'osx' \
+  'archive' \
+  'syntax-highlighting' \
   'history-substring-search' \
-  'prompt' \
-  'osx'
+  'autosuggestions' \
+  'completion' \
+  'prompt'
+
 
 #
 # Autosuggestions
@@ -63,10 +68,10 @@ zstyle ':prezto:load' pmodule \
 zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
-# zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
-#zstyle ':prezto:module:editor' ps-context 'yes'
+zstyle ':prezto:module:editor' ps-context 'yes'
 
 #
 # Git
@@ -181,30 +186,30 @@ zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
-#
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
+
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
-#   'builtin' 'bg=blue' \
-#   'command' 'bg=blue' \
-#   'function' 'bg=blue'
-#
+zstyle ':prezto:module:syntax-highlighting' styles \
+  'builtin' 'bg=blue' \
+  'function' 'bg=blue'
+#  'command' 'bg=blue'
+
 # Set syntax pattern styles.
-# zstyle ':prezto:module:syntax-highlighting' pattern \
-#   'rm*-rf*' 'fg=white,bold,bg=red'
+zstyle ':prezto:module:syntax-highlighting' pattern \
+  'rm*-rf*' 'fg=white,bold,bg=red'
 
 #
 # Terminal
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
