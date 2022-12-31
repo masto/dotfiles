@@ -8,7 +8,6 @@ zplug "zplug/zplug", hook-build:"zplug --self-manage"
 zplug "clvv/fasd", as:command, use:fasd
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "g-plane/zsh-yarn-autocompletions"
-zplug "romkatv/powerlevel10k", as:theme, depth:1
 
 # zplug check returns true if all packages are installed
 # Therefore, when it returns false, run zplug install
