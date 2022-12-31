@@ -3,7 +3,7 @@
 (let ((default-directory  "~/.emacs.d/lisp/"))
   (normal-top-level-add-subdirs-to-load-path))
 
-(require 'arduino-mode)
+;;(require 'arduino-mode)
 ;;(require 'flycheck-arduino)
 ;;(add-hook 'arduino-mode-hook 'flycheck-arduino-setup)
 
@@ -105,6 +105,6 @@
 ;; (require 'go-flymake)
 ;; (require 'go-flycheck)
 
-(require 'auto-complete)
-(require 'go-autocomplete)
-(require 'auto-complete-config)
+;;(require 'auto-complete)
+;;(require 'go-autocomplete)
+;;(require 'auto-complete-config)
