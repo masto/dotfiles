@@ -5,8 +5,6 @@
 source ~/.zplug/init.zsh
 # Plugins
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
-zplug "plugins/git",   from:oh-my-zsh
-#zplug "plugins/osx",   from:oh-my-zsh
 zplug "zsh-users/zsh-autosuggestions"
 zplug "clvv/fasd", as:command, use:fasd
 zplug "b4b4r07/enhancd", use:init.sh
