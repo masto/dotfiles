@@ -8,7 +8,7 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 export EDITOR='emacsclient -t --alternate-editor='
-export EDITOR='emacsclient -t --alternate-editor='
+export VISUAL='emacsclient -t --alternate-editor='
 
 # Add -F to quit if the contents fit on one screen
 export LESS='-F -g -i -M -R -S -w -X -z-4'

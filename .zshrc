@@ -38,7 +38,6 @@ alias jd='dirs -v; jobs'
 alias ls="${aliases[ls]:-ls} -F -v"
 
 # Customizations
-umask 002
 watch=(all)
 export BLOCKSIZE=K
 
