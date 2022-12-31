@@ -2,12 +2,9 @@
 # Executes commands at the start of an interactive session.
 #
 
+# Plugins are in .zplug_packages.zsh
+ZPLUG_LOADFILE="$HOME/.zplug_packages.zsh"
 source ~/.zplug/init.zsh
-# Plugins
-zplug "zplug/zplug", hook-build:"zplug --self-manage"
-zplug "clvv/fasd", as:command, use:fasd
-zplug "b4b4r07/enhancd", use:init.sh
-zplug "g-plane/zsh-yarn-autocompletions"
 
 # zplug check returns true if all packages are installed
 # Therefore, when it returns false, run zplug install
