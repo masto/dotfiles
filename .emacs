@@ -25,7 +25,7 @@
  '(default-frame-alist (quote ((width . 125) (top . 170) (left . 646) (height . 50))))
  '(electric-indent-mode t)
  '(electric-pair-mode t)
- '(global-flycheck-mode t nil (flycheck))
+;; '(global-flycheck-mode t nil (flycheck))
  '(global-linum-mode t)
  '(global-whitespace-mode t)
  '(ido-auto-merge-work-directories-length 3)
