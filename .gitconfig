@@ -7,7 +7,7 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [http]
-	cookiefile = /Users/chris/.gitcookies
+	cookiefile = ~/.gitcookies
 [user]
 	name = Christopher Masto
 	email = chris@masto.com
@@ -17,7 +17,7 @@
 	st = status -sb
 [core]
 	whitespace = trailing-space,space-before-tab,tab-in-indent
-	excludesfile = /Users/chris/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [push]
 	default = simple
 [init]
