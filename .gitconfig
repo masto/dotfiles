@@ -20,6 +20,7 @@
 	excludesfile = ~/.gitignore_global
 [push]
 	default = simple
+	autoSetupRemote = true
 [init]
 	defaultBranch = main
 [include]
