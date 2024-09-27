@@ -10,6 +10,10 @@ set-option -g @scroll-speed-num-lines-per-scroll 1
 set-option -g @scroll-without-changing-pane on
 set-option -g @emulate-scroll-for-no-mouse-alternate-buffer on
 
+# Prevent this option from being set to 0 by tmux-sensible; it
+# interacts poorly with Visual Studio Code.
+set-option -s escape-time 50
+
 # I don't remember what problem these were solving, but they may be obsolete.
 #set -g terminal-overrides 'xterm*:smcup@:rmcup@,*88col*:colors=88,*256col*:colors=256,xterm*:XT'
 #set -g default-terminal "xterm-256color"
