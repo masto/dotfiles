@@ -1,0 +1,7 @@
+set -g mouse
+bind-key -T copy-mode MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel pbcopy
+bind-key    -T copy-mode    WheelUpPane           select-pane \; send-keys -X scroll-up
+bind-key    -T copy-mode    WheelDownPane         select-pane \; send-keys -X scroll-down
+
+set -g terminal-overrides 'xterm*:smcup@:rmcup@,*88col*:colors=88,*256col*:colors=256,xterm*:XT'
+set -g default-terminal "xterm-256color"
