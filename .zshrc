@@ -55,3 +55,12 @@ if [ -f "$HOME/.pyenv" ]; then
   [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
 fi
+
+# Favorites:
+# helios
+# monokai
+# material-darker
+# atelier-dune
+# atelier-seaside
+# tube
+base16_horizon-terminal-dark
