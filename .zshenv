@@ -7,6 +7,9 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+# Turn off Apple's session hackery
+export SHELL_SESSIONS_DISABLE=1
+
 export EDITOR='emacsclient -t --alternate-editor='
 export VISUAL='emacsclient -t --alternate-editor='
 
