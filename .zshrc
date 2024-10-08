@@ -77,11 +77,11 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # capture the unambiguous prefix
 zstyle ':completion:*' menu no
 
-# Favorites:
+# Favorite base16 themes:
 # helios
 # monokai
 # material-darker
 # atelier-dune
 # atelier-seaside
 # tube
-base16_horizon-terminal-dark
+# base16_horizon-terminal-dark
