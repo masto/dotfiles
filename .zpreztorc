@@ -26,12 +26,16 @@ zstyle ':prezto:*:*' color 'yes'
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
+#
+# Dependencies:
+# git clone https://github.com/Aloxaf/fzf-tab $ZPREZTODIR/contrib/fzf-tab
 zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'editor' \
   'history' \
   'directory' \
+  'fzf-tab' \
   'spectrum' \
   'utility' \
   'git' \
@@ -41,7 +45,7 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'autosuggestions' \
-  'completion' \
+  `#'completion' - interacts poorly with fsf-tab` \
   'prompt'
 
 
@@ -112,6 +116,37 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 
 # Set the search globbing flags.
 # zstyle ':prezto:module:history-substring-search' globbing-flags ''
+
+#
+# fzf-tab
+#
+
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
+
+# set descriptions format to enable group support
+# NOTE: don't use escape sequences (like '%F{red}%d%f') here, fzf-tab will ignore them
+zstyle ':completion:*:descriptions' format '[%d]'
+
+# set list-colors to enable filename colorizing
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+# force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
+zstyle ':completion:*' menu no
+
+# preview directory's content with eza when completing cd
+# (I don't use eza, but keeping the example)
+#zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+
+# custom fzf flags
+# NOTE: fzf-tab does not follow FZF_DEFAULT_OPTS
+zstyle ':fzf-tab:*' fzf-flags --color=fg:1,fg+:2 --bind=tab:accept
+
+# switch group using `<` and `>`
+zstyle ':fzf-tab:*' switch-group '<' '>'
+
+# Use tmux popup window
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 #
 # macOS
