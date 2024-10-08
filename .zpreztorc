@@ -45,7 +45,7 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'autosuggestions' \
-  `#'completion' - interacts poorly with fsf-tab` \
+  'completion' \
   'prompt'
 
 
@@ -120,19 +120,6 @@ zstyle ':prezto:module:history' savehist 1000000
 #
 # fzf-tab
 #
-
-# disable sort when completing `git checkout`
-zstyle ':completion:*:git-checkout:*' sort false
-
-# set descriptions format to enable group support
-# NOTE: don't use escape sequences (like '%F{red}%d%f') here, fzf-tab will ignore them
-zstyle ':completion:*:descriptions' format '[%d]'
-
-# set list-colors to enable filename colorizing
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-
-# force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
-zstyle ':completion:*' menu no
 
 # preview directory's content with eza when completing cd
 # (I don't use eza, but keeping the example)
