@@ -11,6 +11,7 @@
 [user]
 	name = Christopher Masto
 	email = chris@masto.com
+	signingkey = BA50C79F4A2E24C0
 [alias]
 	tree = log --graph --oneline --decorate --all
 	graph = log --graph --oneline --decorate
