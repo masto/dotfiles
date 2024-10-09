@@ -19,6 +19,7 @@
 [core]
 	whitespace = trailing-space,space-before-tab,tab-in-indent
 	excludesfile = ~/.gitignore_global
+	editor = code --new-window --wait
 [push]
 	default = simple
 	autoSetupRemote = true
