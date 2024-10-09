@@ -1,17 +1,8 @@
-[credential "https://github.com"]
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = !/usr/bin/gh auth git-credential
 [credential "https://source.developers.google.com"]
 	helper = gcloud.sh
 [credential "https://dev.azure.com"]
 	useHttpPath = true
-[http]
-	cookiefile = ~/.gitcookies
-[user]
-	name = Christopher Masto
-	email = chris@masto.com
-	signingkey = BA50C79F4A2E24C0
+
 [alias]
 	tree = log --graph --oneline --decorate --all
 	graph = log --graph --oneline --decorate
@@ -20,10 +11,30 @@
 	whitespace = trailing-space,space-before-tab,tab-in-indent
 	excludesfile = ~/.gitignore_global
 	editor = code --new-window --wait
+	pager = delta
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	syntax-theme = base16
+	blame-palette = "#222222 #444444 #444477 #447744 #774444"
+	# delta detects terminal colors automatically; set one of these to disable auto-detection
+	# dark = true
+	# light = true
+[diff]
+	colorMoved = default
+[http]
+	cookiefile = ~/.gitcookies
+[include]
+	path = .gitconfig.local
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
+[merge]
+	conflictstyle = diff3
 [push]
 	default = simple
 	autoSetupRemote = true
-[init]
-	defaultBranch = main
-[include]
-	path = .gitconfig.local
+[user]
+	name = Christopher Masto
+	email = chris@masto.com
+	signingkey = BA50C79F4A2E24C0
