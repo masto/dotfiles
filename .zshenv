@@ -20,3 +20,5 @@ export AUTOSWITCH_DEFAULT_PYTHON="/usr/bin/python3"
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+export LS_COLORS='ln=35;40:ow=30;43'

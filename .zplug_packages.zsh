@@ -5,3 +5,4 @@ zplug "g-plane/zsh-yarn-autocompletions"
 zplug "MichaelAquilina/zsh-autoswitch-virtualenv"
 zplug "lukechilds/zsh-nvm"
 zplug "chriskempson/base16-shell", from:github
+zplug 'yuhonas/zsh-aliases-lsd'

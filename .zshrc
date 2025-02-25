@@ -34,7 +34,7 @@ zplug load
 
 # Aliases
 alias jd='dirs -v; jobs'
-alias ls="${aliases[ls]:-ls} -F -v"
+alias lt='lsd --tree --ignore-glob=node_modules --ignore-glob=.git'
 
 # Customizations
 watch=(all)
