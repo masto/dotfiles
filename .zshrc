@@ -2,6 +2,9 @@
 # Executes commands at the start of an interactive session.
 #
 
+# Settings required before loading zplug
+export NVM_AUTO_USE=true
+
 # Plugins are in .zplug_packages.zsh
 ZPLUG_LOADFILE="$HOME/.zplug_packages.zsh"
 source ~/.zplug/init.zsh
@@ -36,10 +39,6 @@ alias ls="${aliases[ls]:-ls} -F -v"
 # Customizations
 watch=(all)
 export BLOCKSIZE=K
-
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(fzf --zsh)"
 eval "$(fasd --init auto)"
