@@ -20,7 +20,10 @@
 	# dark = true
 	# light = true
 [diff]
-	colorMoved = default
+	colorMoved = dimmed-zebra
+	algorithm = histogram
+	mnemonicPrefix = true
+	renames = true
 [http]
 	cookiefile = ~/.gitcookies
 [include]
@@ -30,11 +33,31 @@
 [interactive]
 	diffFilter = delta --color-only
 [merge]
-	conflictstyle = diff3
+	conflictstyle = zdiff3
 [push]
 	default = simple
 	autoSetupRemote = true
+	followTags = true
 [user]
 	name = Christopher Masto
 	email = chris@masto.com
 	signingkey = BA50C79F4A2E24C0
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[pull]
+	rebase = true
