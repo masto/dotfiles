@@ -23,3 +23,9 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 export LS_COLORS='di=34:ln=35;40:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
 
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_DEFAULT_OPTS="--height 50% --layout=default --border --color=hl:#2dd4bf"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {} 2>/dev/null'"
+export FZF_ALT_C_OPTS="--preview 'lsd --icon=always --tree --color=always {} 2>/dev/null | head -200'"
