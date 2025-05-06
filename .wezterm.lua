@@ -6,6 +6,7 @@ config.font = wezterm.font "MesloLGS Nerd Font Mono"
 config.font_size = 21
 config.term = "wezterm"
 config.hide_tab_bar_if_only_one_tab = true
+config.window_close_confirmation = 'NeverPrompt'
 
 config.color_scheme = 'Horizon Dark (base16)'
 config.colors = {
