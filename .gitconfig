@@ -7,6 +7,8 @@
 	tree = log --graph --oneline --decorate --all
 	graph = log --graph --oneline --decorate
 	st = status -sb
+	dif = "!f() { git diff \"$@\" -- . ':(exclude)pnpm-lock.yaml'; }; f"
+	dd = dif
 [core]
 	whitespace = trailing-space,space-before-tab,tab-in-indent
 	excludesfile = ~/.gitignore_global
@@ -14,6 +16,8 @@
 	pager = delta
 [delta]
 	navigate = true    # use n and N to move between diff sections
+	line-numbers = true
+	diff-so-fancy = true
 	syntax-theme = base16
 	blame-palette = "#222222 #444444 #444477 #447744 #774444"
 	# delta detects terminal colors automatically; set one of these to disable auto-detection
