@@ -12,8 +12,8 @@
 [core]
 	whitespace = trailing-space,space-before-tab,tab-in-indent
 	excludesfile = ~/.gitignore_global
-	editor = code --new-window --wait
 	pager = delta
+	editor = code --wait
 [delta]
 	navigate = true    # use n and N to move between diff sections
 	line-numbers = true
