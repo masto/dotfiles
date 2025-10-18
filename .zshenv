@@ -29,3 +29,11 @@ export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git
 export FZF_DEFAULT_OPTS="--height 50% --layout=default --border --color=hl:#2dd4bf"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {} 2>/dev/null'"
 export FZF_ALT_C_OPTS="--preview 'lsd --icon=always --tree --color=always {} 2>/dev/null | head -200'"
+
+# Disable pagers when the terminal is launched by Cline
+if [[ -n "$CLINE_ACTIVE" ]]; then
+  export PAGER=cat
+  export GIT_PAGER=cat
+  export SYSTEMD_PAGER=cat
+  export LESS="-FRX"
+fi
