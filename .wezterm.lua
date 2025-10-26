@@ -31,6 +31,7 @@ config.keys = {
   { key = '=', mods = 'CTRL', action = wezterm.action.DisableDefaultAssignment },
   { key = '=', mods = 'SHIFT|CTRL', action = wezterm.action.DisableDefaultAssignment },
   { key = '+', mods = 'SHIFT|SUPER', action = wezterm.action.IncreaseFontSize },
+  { key = 'Enter', mods = 'SHIFT', action = wezterm.action.SendKey { key = 'j', mods = 'CTRL' } },
 }
 
 return config
