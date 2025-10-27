@@ -1,0 +1,22 @@
+\set AUTOCOMMIT off
+\echo AUTOCOMMIT IS OFF
+
+\set ON_ERROR_ROLLBACK interactive
+\set COMP_KEYWORD_CASE upper
+\set HISTFILE ~/.psql/history- :DBNAME
+\set HISTCONTROL ignoredups
+
+\set PROMPT1 '%[%033[1m%]%M %n@%/%R%[%033[0m%]%x%# '
+\set VERBOSITY verbose
+\x auto
+
+\pset null ∅
+
+-- \pset linestyle unicode
+-- \setenv PAGER less
+-- \setenv LESS '-F -g -i -M -R -S -w -X -z-4'
+
+\setenv PAGER 'pspg --reprint-on-exit'
+\pset pager always
+\pset border 2
+\pset linestyle unicode
